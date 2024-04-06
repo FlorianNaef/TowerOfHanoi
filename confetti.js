@@ -101,3 +101,5 @@ for (var i = 0; i < maxConfettis; i++) {
 canvas.width = W;
 canvas.height = H;
 Draw();
+
+//test
