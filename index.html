@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="picocss/pico.min.css" />
+    <link rel="stylesheet" href="picocss/pico.colors.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tower of Hanoi</title>
+  </head>
+  <body>
+    <header class="title-bar">
+      <h1>Tower of Hanoi</h1>
+      <a href="https://github.com/FlorianNaef/TowerOfHanoi" target="_blank">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Github_logo_svg.svg/50px-Github_logo_svg.svg.png"
+        />
+      </a>
+    </header>
+
+    <div class="content-container">
+      <section class="section explanation-container">
+        <h2>Explanation</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eius
+          dignissimos cumque? Animi, deleniti aliquam laudantium quam maxime in.
+          Quasi nobis quisquam sequi illo reiciendis totam dolores quidem ea
+          consectetur.
+        </p>
+      </section>
+
+      <section class="section setup-container"></section>
+
+      <section class="section code-container">
+        <h2>Write your code here</h2>
+        <p>
+          You are provided a Game object with the name game. It has the
+          functions pickup(towerNumber) and putdown(towerNumber). Write your
+          JavaScript in the TextArea below.
+        </p>
+        <textarea class="codearea">console.log(game);</textarea>
+        <button onclick="runCode()">Play</button>
+        <button class="secondary" onclick="reset()">Reset</button>
+      </section>
+
+      <section class="section error-container"></section>
+
+      <section class="section history-container"></section>
+    </div>
+
+    <dialog class="success-modal">
+      <article>
+        <h2>You did it!</h2>
+        <p>Well done you correctly solved the puzzle.</p>
+        <footer>
+          <button onclick="toggleModal()">Confirm</button>
+        </footer>
+      </article>
+      <canvas id="canvas"></canvas>
+    </dialog>
+    <footer>
+      <a
+        class="secondary"
+        href="https://github.com/picocss/pico"
+        target="_blank"
+        >Built with Pico Css</a
+      >
+      <a
+        class="secondary"
+        href="https://codepen.io/jonathanbell"
+        target="_blank"
+        >Confetti by Jonathan Bell</a
+      >
+    </footer>
+  </body>
+  <script src="script.js"></script>
+  <script src="confetti.js"></script>
+</html>
